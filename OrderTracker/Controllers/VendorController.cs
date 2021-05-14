@@ -42,7 +42,7 @@ namespace PierresBakery.Controllers
       Vendor foundvendor = Vendor.Find(vendorId);
       Order newOrder = new Order(OrderDescription);
       foundVendor.AddItem(newOrder);
-      List<Order> vendorOrders = foundCategory.Items;
+      List<Order> vendorOrders = foundVendor.Orders;
       model.Add("orders", vendorOrders);
       model.Add("vendor", foundVendor);
       return View("Show", model);

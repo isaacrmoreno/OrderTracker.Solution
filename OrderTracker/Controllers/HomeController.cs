@@ -1,13 +1,13 @@
 using Microsoft.AspNetCore.Mvc;
-using Template.Models;
+using PierresBakery.Models;
 
-namespace Template.Controllers
+namespace PierresBakery.Controllers
 {
   public class HomeController : Controller
   {
 
     [Route("/")]
-    public ActionResult Title() { return View(); }
+    public ActionResult Index() { return View(); }
 
   }
 }

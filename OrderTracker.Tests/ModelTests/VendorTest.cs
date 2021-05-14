@@ -9,10 +9,10 @@ namespace PierresBakery.TestTools
   public class VendorTest
   {
     [TestMethod]
-    public void GameConstructor_CreatesInstanceOfHangmanGame_HangmanGame()
+    public void VendorConstructor_CreatesInstanceOfVendor_Vendor()
     {
-      HangmanGame newHangman = new();
-      Assert.AreEqual(typeof(HangmanGame), newHangman.GetType());
+      Vendor newVendor = Vendor("test Vendor");
+      Assert.AreEqual(typeof(Vendor), newVendor.GetType());
     }
   }
 }

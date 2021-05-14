@@ -52,7 +52,7 @@ namespace PierresBakery.Tests
       string name2 = "Claire's Cupcakes";
       Vendor newVender1 = new Vendor(name1);
       Vendor newVender2 = new Vendor(name2);
-      List<Vendor> result = Vendor.Find(2);
+      Vendor result = Vendor.Find(2);
       Assert.AreEqual(newVender2, result);
     }
   }

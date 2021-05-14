@@ -3,11 +3,15 @@ using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PierresBakery.Models;
 
-namespace PierresBakery.TestTools
+namespace PierresBakery.Tests
 {
   [TestClass]
-  public class VendorTest
+  public class VendorTest : IDisposable
   {
+    public void Dispose()
+    {
+      Vendor.ClearAll();
+    }
     [TestMethod]
     public void VendorConstructor_CreatesInstanceOfVendor_Vendor()
     {
@@ -22,6 +26,13 @@ namespace PierresBakery.TestTools
       string result = newVender.Name;
       Assert.AreEqual(name, result);
     }
-
+    [TestMethod]
+    public void GetId_ReturnsVendorId_int()
+    {
+      string name = "Claire's Cupcakes";
+      Vendor newVendor = new Vendor(name);
+      int result = newVendor.Id;
+      Assert.AreEqual(45, result);
+    }
   }
 }

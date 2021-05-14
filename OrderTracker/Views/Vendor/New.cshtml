@@ -1,14 +1,14 @@
 @{ Layout = "_Layout"; }
 
-<h2>Please fill out form to add new vendor</h2>
+<h2>Please fill out form to add new vendor:</h2>
 
-<form action="/vendor/@Model.Id/orders" method="post">
-  <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id" />
+<form action="/vendors" method="post">
   <label for="vendorName">Name:</label>
   <input id="vendorName" name="vendorName" type="text" />
   <label for="vendorDescription">Description:</label>
   <input id="vendorDescription" name="vendorDescription" type="text" />
-  <button type="submit">Submit</button>
+  <button type="submit">Add Vendor</button>
 </form>
 
-<p><a href="/">Back home</a></p>
+<p><a href="/">HOME</a></p>
+<p><a href="/vendors">VENDORS</a></p>

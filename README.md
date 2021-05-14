@@ -1,15 +1,15 @@
 <h1 align="center">
-Project Title </h1>
+🥖 Pierre's Vender/Order Tracker ✏️ </h1>
 
 <hr style="height: 1px; border:none; color:#333; background" />
 
 ### By Isaac Moreno 👨‍💻
 
-Click [here](https://github.com/isaacrmoreno/repo-name) to view project.
+Click [here](https://github.com/isaacrmoreno/OrderTracker.Solution) to view project.
 
 # Description 📝
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Website where fictional character Pierre can keep track/create vendor order information for his bakery.
 
 # Prerequisites 🖥️
 
@@ -19,18 +19,18 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 # Setup/Installation Instructions 📁
 
-1. Clone the repository: `% git clone https://github.com/isaacrmoreno/MyProject.Solution`
-2. Navigate to the `MyProject.Solution` directory on your computer
+1. Clone the repository: `% git clone https://github.com/isaacrmoreno/OrderTracker.Solution`
+2. Navigate to the `OrderTracker.Solution` directory on your computer
 3. Open with your preferred text editor to view code
 4. To run the console app:
 5. To run the console app:
-   - Navigate to `MyProject.Solution/MyProject` in your command line
+   - Navigate to `OrderTracker.Solution/OrderTracker` in your command line
    - Run the command `dotnet restore` to restore the dependencies that are listed in the .csproj
    - Run the command `dotnet build` to build the project and its dependencies into a set of binaries
    - Finally, run the command `dotnet run` to run the project!
    - Note: `dotnet run` also restores and builds the project, so you can use this single command to start the console app
 6. To run tests:
-   - Navigate to `MyProject.Solution/MyProject.Tests` in your command line.
+   - Navigate to `OrderTracker.Solution/OrderTracker.Tests` in your command line.
    - Run the command `dotnet restore` to restore the dependencies that are listed in the .csproj
    - Finally, run the command `dotnet test` to run the tests!
 

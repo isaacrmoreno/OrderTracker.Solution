@@ -9,9 +9,10 @@ namespace PierresBakery.Models
     public string Description { get; set; }
     public int Id { get; }
     public List<Order> Orders { get; set; }
-    public Vendor(string VendorName)
+    public Vendor(string vendorName, string venderDescription)
     {
-      Name = VendorName;
+      Name = vendorName;
+      Description = venderDescription;
       _instances.Add(this);
       Id = _instances.Count;
       Orders = new List<Order> { };

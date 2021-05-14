@@ -20,7 +20,7 @@ namespace PierresBakery.TestTools
       string name = "Bills Baguettes";
       Vendor newVender = new Vendor(name);
       string result = newVender.Name;
-      Assert.AreEqual("Joe", result);
+      Assert.AreEqual(name, result);
     }
 
   }

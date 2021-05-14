@@ -46,4 +46,5 @@ namespace PierresBakery.Tests
       CollectionAssert.AreEqual(newList, result);
     }
   }
+
 }

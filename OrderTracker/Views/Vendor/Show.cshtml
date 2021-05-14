@@ -1,0 +1,17 @@
+@using PierresBakery.Models; @{ Layout = "_Layout"; }
+
+<h3>Orders for @Model.Name</h3>
+
+<ol>
+  @foreach (Order order in @Model["Orders"]) {
+  <li>
+    <a href='/vendors/@Model["Vendor"].Id/orders/@order.Id'
+      >@order.Description</a
+    >
+  </li>
+  }
+</ol>
+
+<p><a href='/vendors/@Model["Vendor"].Id/orders/new'>Add a new item</a></p>
+<p><a href="/categories">Return to category list</a></p>
+<p><a href="/">Return to Main Page</a></p>

@@ -1,17 +1,17 @@
 @using PierresBakery.Models; @{ Layout = "_Layout"; }
 
-<h3>Orders for @Model.Name</h3>
+<h3>Orders:</h3>
 
 <ol>
-  @foreach (Order order in @Model["Orders"]) {
+  @foreach (Order order in @Model["orders"]) {
   <li>
-    <a href='/vendors/@Model["Vendor"].Id/orders/@order.Id'
+    <a href='/vendors/@Model["vendor"].Id/orders/@order.Id'
       >@order.Description</a
     >
   </li>
   }
 </ol>
 
-<p><a href='/vendors/@Model["Vendor"].Id/orders/new'>Add a new order</a></p>
-<p><a href="/vendor">Return to vendor list</a></p>
-<p><a href="/">Return to Home Page</a></p>
+<p><a href='/vendors/@Model["vendor"].Id/orders/new'>Add a new order</a></p>
+<p><a href="/vendors">VENDOR</a></p>
+<p><a href="/">HOME</a></p>

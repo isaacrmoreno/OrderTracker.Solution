@@ -23,13 +23,12 @@ Website where fictional character Pierre can keep track/create vendor order info
 2. Navigate to the `OrderTracker.Solution` directory on your computer
 3. Open with your preferred text editor to view code
 4. To run the console app:
-5. To run the console app:
    - Navigate to `OrderTracker.Solution/OrderTracker` in your command line
    - Run the command `dotnet restore` to restore the dependencies that are listed in the .csproj
    - Run the command `dotnet build` to build the project and its dependencies into a set of binaries
    - Finally, run the command `dotnet run` to run the project!
    - Note: `dotnet run` also restores and builds the project, so you can use this single command to start the console app
-6. To run tests:
+5. To run tests:
    - Navigate to `OrderTracker.Solution/OrderTracker.Tests` in your command line.
    - Run the command `dotnet restore` to restore the dependencies that are listed in the .csproj
    - Finally, run the command `dotnet test` to run the tests!
